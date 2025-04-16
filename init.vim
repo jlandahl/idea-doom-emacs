@@ -16,7 +16,7 @@ set wrapscan
 " IdeaVim only
 set ideajoin=true
 set idearefactormode=visual
-set ideavimsupport=
+set ideavimsupport=dialog
 
 
 " evil-escape
@@ -37,7 +37,8 @@ nmap zm <Action>(CollapseAllRegions)
 nmap zr <Action>(ExpandAllRegions)
 
 " doom-escape-hook
-nnoremap <Esc> :<C-u>nohl<CR>:<C-u>action HideAllWindows<CR><Esc>
+" -- 2025-04-15 @jlandahl: commented out, as it's way too confusing and not even a Doom Emacs thing
+"nnoremap <Esc> :<C-u>nohl<CR>:<C-u>action HideAllWindows<CR><Esc>
 
 
 "
@@ -83,7 +84,7 @@ let g:WhichKeyDesc_find_file1 = '<leader>. Find file'
 map <Leader><CR> <Action>(Bookmarks)
 let g:WhichKeyDesc_jump_to_bookmark = '<leader>⏎ Jump to bookmark'
 " Switch buffer
-map <Leader>< <Action>(Switcher)
+map <Leader>, <Action>(Switcher)
 let g:WhichKeyDesc_switch_buffer = '<leader>< Switch buffer'
 " Switch to last buffer
 map <Leader>` <Action>(GoToLastTab)
