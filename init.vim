@@ -85,7 +85,7 @@ map <Leader><CR> <Action>(Bookmarks)
 let g:WhichKeyDesc_jump_to_bookmark = '<leader>⏎ Jump to bookmark'
 " Switch buffer
 map <Leader>, <Action>(Switcher)
-let g:WhichKeyDesc_switch_buffer = '<leader>< Switch buffer'
+let g:WhichKeyDesc_switch_buffer = '<leader>, Switch buffer'
 " Switch to last buffer
 map <Leader>` <Action>(GoToLastTab)
 let g:WhichKeyDesc_switch_to_last_buffer = '<leader>` Switch to last buffer'
